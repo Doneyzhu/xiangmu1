@@ -1,26 +1,26 @@
 var builder = WebApplication.CreateBuilder(args);
 
-// Ìí¼Ó¿ØÖÆÆ÷ºÍÊÓÍ¼·þÎñ
+// ï¿½ï¿½Ó¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¼ï¿½ï¿½ï¿½ï¿½
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
 
 
-// »ñÈ¡ EndpointDataSource ÊµÀý
+// ï¿½ï¿½È¡ EndpointDataSource Êµï¿½ï¿½
 var endpointDataSource = app.Services.GetRequiredService<Microsoft.AspNetCore.Routing.EndpointDataSource>();
 
-// Êä³öËùÓÐÂ·ÓÉÐÅÏ¢
+// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½Ï¢
 foreach (var endpoint in endpointDataSource.Endpoints)
 {
     if (endpoint is Microsoft.AspNetCore.Routing.RouteEndpoint routeEndpoint)
     {
-        Console.WriteLine($"Â·ÓÉÄ£Ê½: {routeEndpoint.RoutePattern.RawText}");
-        Console.WriteLine($"´¦Àí³ÌÐò: {routeEndpoint.RequestDelegate?.Target}");
+        Console.WriteLine($"Â·ï¿½ï¿½Ä£Ê½: {routeEndpoint.RoutePattern.RawText}");
+        Console.WriteLine($"ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½: {routeEndpoint.RequestDelegate?.Target}");
         Console.WriteLine("----------------------");
     }
 }
 
-// ÅäÖÃ HTTP ÇëÇó´¦Àí
+// ï¿½ï¿½ï¿½ï¿½ HTTP ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
@@ -34,7 +34,7 @@ app.UseRouting();
 
 app.UseAuthorization();
 
-// ÐÞ¸ÄÄ¬ÈÏÂ·ÓÉ
+// ï¿½Þ¸ï¿½Ä¬ï¿½ï¿½Â·ï¿½ï¿½
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Login}/{action=Index}/{id?}");

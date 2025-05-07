@@ -136,18 +136,19 @@ setTimeout("showDateTime()",1000)
 		
 		<div id="login_box">		
 		<img src="image/login/login_icon.gif" />
-		<form action="/Login/Index">
+		<form action="/Login/Index" method="post">
 		<label for="user_name"><strong>用户名： </strong><input type="text" name="username" class="login_box_input" /></label><br />
 		<br />
 		<label for="password"><strong>&nbsp;&nbsp;&nbsp;密码： </strong>&nbsp;<input type="text" name="password" class="login_box_input" /></label><br /><br />
-		<label for="password"><strong>&nbsp;&nbsp;&nbsp;角色： </strong>&nbsp;
+								<!--<label for="password"><strong>&nbsp;&nbsp;&nbsp;角色： </strong>&nbsp;
 		<select name="role">
 			<option value="1">普通用户</option> 
 			<option value="3">薪酬管理员</option>
 			<option value="4">超级用户</option>
-		</select><br /><br />
+		</select><br /><br />-->
 		<!-- label for="cookiable"><input type="checkbox" id="cookiable" />在本电脑上记录我的用户名和密码</label><br / -->
-		<label for="loginbutton">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="image" name="username" src="image/login/login_button.gif"  alt="login" /></label><br /><br />
+		<label for="loginbutton">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<input type="image" name="username" src="image/login/login_button.gif"  alt="login" /></label><br /><br />
 		<br />
 		</form>
 		</div>

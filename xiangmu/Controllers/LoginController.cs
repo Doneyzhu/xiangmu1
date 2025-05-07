@@ -19,7 +19,7 @@ namespace xiangmu.Controllers
             if (username == ValidUsername && password == ValidPassword)
             {
                 // 登录成功，重定向到 query1 页面的 Index 方法
-                return RedirectToAction("Index", "Query1");
+                return RedirectToAction("Index1", "Query1");
             }
             else
             {
