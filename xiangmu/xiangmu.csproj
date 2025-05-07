@@ -1,0 +1,75 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="Views\index.cshtml" />
+    <Content Remove="Views\query1.cshtml" />
+    <Content Remove="Views\Query1\Index.cshtml" />
+    <Content Remove="Views\weihu.cshtml" />
+    <Content Remove="wwwroot\css\cfi_global.css" />
+    <Content Remove="wwwroot\css\login.css" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Views\Login\index.cshtml" />
+    <None Include="Views\Query1\Index.cshtml" />
+    <None Include="Views\Weihu\weihu.cshtml" />
+    <None Include="wwwroot\css\cfi_global.css" />
+    <None Include="wwwroot\css\login.css" />
+    <None Include="wwwroot\image\arrow_box.gif" />
+    <None Include="wwwroot\image\button_bg_blue.gif" />
+    <None Include="wwwroot\image\button_bg_gray.gif" />
+    <None Include="wwwroot\image\cfi_logo.png" />
+    <None Include="wwwroot\image\error.gif" />
+    <None Include="wwwroot\image\error2.gif" />
+    <None Include="wwwroot\image\go_button.gif" />
+    <None Include="wwwroot\image\ibm_logo.jpg" />
+    <None Include="wwwroot\image\icon_configure.png" />
+    <None Include="wwwroot\image\icon_del.png" />
+    <None Include="wwwroot\image\icon_edit.png" />
+    <None Include="wwwroot\image\icon_object.png" />
+    <None Include="wwwroot\image\icon_view.png" />
+    <None Include="wwwroot\image\loading.gif" />
+    <None Include="wwwroot\image\login\arrow.gif" />
+    <None Include="wwwroot\image\login\arrow_box.gif" />
+    <None Include="wwwroot\image\login\bgcanvas.png" />
+    <None Include="wwwroot\image\login\button_bg_blue.gif" />
+    <None Include="wwwroot\image\login\button_bg_gray.gif" />
+    <None Include="wwwroot\image\login\continue.gif" />
+    <None Include="wwwroot\image\login\dev.gif" />
+    <None Include="wwwroot\image\login\go.gif" />
+    <None Include="wwwroot\image\login\go_button.gif" />
+    <None Include="wwwroot\image\login\login_bar.gif" />
+    <None Include="wwwroot\image\login\login_button.gif" />
+    <None Include="wwwroot\image\login\login_icon.gif" />
+    <None Include="wwwroot\image\login\navigation_bg.gif" />
+    <None Include="wwwroot\image\login\nav_bg.jpg" />
+    <None Include="wwwroot\image\login\nav_bottom.gif" />
+    <None Include="wwwroot\image\login\pm.gif" />
+    <None Include="wwwroot\image\login\previous.gif" />
+    <None Include="wwwroot\image\login\redarrow.gif" />
+    <None Include="wwwroot\image\login\register_button.gif" />
+    <None Include="wwwroot\image\login\related_info_bg.gif" />
+    <None Include="wwwroot\image\login\related_info_bg.png" />
+    <None Include="wwwroot\image\login\复件 login_icon.gif" />
+    <None Include="wwwroot\image\navigation_bg.gif" />
+    <None Include="wwwroot\image\organ\department.gif" />
+    <None Include="wwwroot\image\paper_pen_icon.gif" />
+    <None Include="wwwroot\image\redarrow.gif" />
+    <None Include="wwwroot\image\report\income.gif" />
+    <None Include="wwwroot\image\report\income2.gif" />
+    <None Include="wwwroot\image\right.gif" />
+    <None Include="wwwroot\image\right2.gif" />
+    <None Include="wwwroot\image\search_bg.gif" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="EntityFramework" Version="6.5.1" />
+  </ItemGroup>
+
+</Project>
